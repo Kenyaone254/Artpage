@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+<!--internal css-->
+  <style>
+    #Item1 {
+      grid-area:Item1;
+      padding: 10px;
+      margin: 10px;
+    }
+    #Item2 {
+      grid-area:Item2;
+      padding: 10px;
+      margin: 10px;
+
+    }
+    #Item3 {
+      grid-area:Item3;
+      padding: 10px;
+      margin: 10px;
+    }
+    #Item4 {
+      grid-area:Item4;
+      padding: 10px;
+      margin: 10px;
+    }
+    #Item5 {
+        grid-area: Item5;
+        padding: 10px;
+        margin: 10px;
+    }
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+        'Item1 Item1 Item1 Item1 Item1 Item1 Item1'
+        'Item2 Item2 Item2 Item2 Item2 Item2 Item2'
+        'Item3 Item3 Item4 Item4 Item4 Item5 Item5'
+
+
+        ;
+        }
+
+        @media only screen and (max-width: 600px){
+/* inside this I can reference my css rules*/
+          .grid-container {
+            display: grid;
+            grid-template-areas:
+        'Item1 Item1 Item1 Item1 Item1 Item1 Item1'
+        'Item2 Item2 Item2 Item2 Item2 Item2 Item2'
+        'Item3 Item3 Item3 Item3 Item3 Item3 Item3'
+        'Item4 Item4 Item4 Item4 Item4 Item4 Item4'
+        'Item5 Item5 Item5 Item5 Item5 Item5 Item5'
+
+
+
+        ;
+        }
+
+  }
+
+  </style>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+<div class="grid-container">
+
+    <div id="Item1"><iframe width="1200" height="500" src="https://www.youtube.com/embed/PFPfxcvRshk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>.
+    <div id="Item2"><img src="../../assets/WhatsApp Image 2023-01-27 at 02.38.09.jpg" height="500" width="500"/></div>
+    <div id="Item3"><p>My name is Ivy Njoroge. I was born in 2004 in Nakuru county
+        I went to the Kenya High School.</p></div>
+    <div id="Item4"><ol><h4>Favourite movies</h4><li>Wednesday</li><li>Chucky</li><li>Meghan</li></ol>
+    <ul><h4>Favourite food</h4><li>Pizza</li><li>Pilau</li><li>Chips</li></ul></div>
+    <div id="Item5"><h1>These are Emojis</h1><p style="font-size:48px">&#128512; &#128516; &#128525; &#128151;</p></div>
+
+
+</div>
+<!--these are partitions sections of your page depending on design-->
+<!--colour mapping display my grid before adding content-->
+
+</body>
+</html>
